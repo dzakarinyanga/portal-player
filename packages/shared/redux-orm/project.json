@@ -1,0 +1,23 @@
+{
+  "root": "packages/shared/redux-orm",
+  "sourceRoot": "packages/shared/redux-orm/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/shared/redux-orm/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/shared/redux-orm"],
+      "options": {
+        "jestConfig": "packages/shared/redux-orm/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

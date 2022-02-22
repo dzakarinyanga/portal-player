@@ -26,6 +26,21 @@
       "extends": ["plugin:@nrwl/nx/typescript"],
       "rules": {
         "@typescript-eslint/no-empty-function": "off",
+        "no-restricted-imports": [
+          "error",
+          {
+            "patterns": [
+              {
+                "group": [
+                  "redux-orm",
+                  "redux-orm/*",
+                  "!@portal/shared/redux-orm"
+                ],
+                "message": "Use `@portal/shared/redux-orm` instead."
+              }
+            ]
+          }
+        ]
       }
     },
     {

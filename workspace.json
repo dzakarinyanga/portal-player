@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
-    "player": "packages/player"
+    "player": "packages/player",
+    "shared-redux-orm": "packages/shared/redux-orm"
   }
 }
